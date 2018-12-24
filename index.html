@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing:border-box;
+        }
+        body{
+            margin:0;
+            height:200px;
+        }
+        #top_nav{
+            border-top:20px solid pink;
+        }
+        #container{/* 上面navbar的container*/
+            max-width:  1200px;
+            margin:0 auto;
+        }
+        .clearfix{
+            clear:both;
+        }
+        #banner{
+            height:50vh;
+            background-image: url('ABC.jpg');
+            background-size: cover;
+            background-position-y: 30%;
+            background-attachment: fixed;
+        }
+        #banner .title{
+            margin: 0;
+            position: absolute;
+            top:50px;
+            right:0;
+            transform: translateY(-50%);
+            color: white;
+            font-size:75px;
+            line-height:75px;
+            letter-spacing:15px;
+            text-shadow: 3px 3px 5px  =grey;
+            background-color:rgba(0,0,0,0.6 )
+            padding:10px 25px;
+        }
+        #banner .container{
+            height:70vh;
+            position: relative;
+        }
+        /* 主要選單 */
+        #menu.nav{
+            position:sticky;
+            top:0;
+            left:0;
+            background-color: blueviolet;
+        }
+        #menu.nav a.link {
+            transition: 0.3s; 
+            color:salmon;
+            text-decoration: none;
+            display: block;
+            padding:10px 20px; 
+            float:left;
+        }
+     
+    </style>
+
+</head>
+<body>
+    <nav id="top_nav"></nav>
+
+    <section id="banner">
+        <div class="container"></div>
+    <h1 class="title">secret for someone</h1>
+    </section>
+
+    <nav id="menu-nav"></nav>
+        <div class="container"></div>
+            <a class="link" href="section1">link1</a>
+            <a class="link" href="section2">link2</a>
+            <a class="link" href="section3">link3</a>
+            <a class="link" href="section4">link4</a>
+        <div class="clearfix"></div>
+    <footer></footer>
+</body>
+</html>
